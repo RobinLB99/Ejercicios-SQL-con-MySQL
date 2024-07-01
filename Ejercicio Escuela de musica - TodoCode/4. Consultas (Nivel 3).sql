@@ -29,7 +29,7 @@ JOIN Alumnos a ON i.ID_Alumno = a.ID_ALumno
 WHERE DATEDIFF(CURDATE(), a.Fecha_Nacimiento) / 365.25 > 20;  
 
 
--- Listar el nombres y apellidos de los alumnos junto con los nombres
+-- 3. Listar el nombres y apellidos de los alumnos junto con los nombres
 -- de los cursos en los que estan inscriptos, pero solo aquellos que
 -- se inscribieron en 2024.
 SELECT a.Nombres, a.Apellidos, c.Nombre 
