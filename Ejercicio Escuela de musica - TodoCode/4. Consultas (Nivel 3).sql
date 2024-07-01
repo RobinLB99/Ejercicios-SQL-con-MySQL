@@ -36,4 +36,4 @@ SELECT a.Nombres, a.Apellidos, c.Nombre
 FROM Alumnos a
 JOIN Inscripciones i ON a.ID_ALumno = i.ID_Alumno 
 JOIN Cursos c ON i.ID_Curso = c.ID_Curso 
-WHERE YEAR(i.Fecha_Inscripcion) < 2024;
+WHERE YEAR(i.Fecha_Inscripcion) >= 2024;
